@@ -1,0 +1,20 @@
+{
+  "name": "Facebook Messenger Bot",
+  "version": "0.1",
+  "description": "Bot experiments",
+  "main": "facebot.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arthurpokrashenko/facebot.git"
+  },
+  "author": "Arthur Pokrashenko <arthurpokrashenko@gmail.com>",
+  "license": "Proprietary",
+  "dependencies": {
+    "EventEmitter": "^1.0.0",
+    "babel": "^5.8.21",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "request": "^2.71.0",
+    "resource-router-middleware": "^0.5.1"
+  }
+}
