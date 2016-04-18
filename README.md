@@ -6,7 +6,7 @@ FaceBot is a Facebook Messenger Bot
 import { Router } from 'express';
 import http from 'http';
 import express from 'express';
-import FaceBot from '../lib/facebot.js';
+import FaceBot from 'facebot';
 
 let app = express();
 let api = Router();
@@ -28,6 +28,14 @@ app.server = http.createServer(app);
 app.use('/webhook', bot.middleware());
 app.server.listen(8080);
 ```
+## Initialize
+```javascript
+let bot = new FaceBot(options)
+```
+options – Object
+- `token` – Facebook Page access token
+- `verify` – Facebook Webhook verification token. 
+- `pageId` – Facebook Page ID. To set a welcome message.
 
 ## Events
 #### Messages
